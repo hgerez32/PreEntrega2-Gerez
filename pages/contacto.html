@@ -17,30 +17,31 @@
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../assets/img/GG.png" alt="" width="80" height="80">
-                    <!-- <span class="text-dark row">LENCERIA</span> -->
+                    <img src="../assets/img/GG.png" alt="" width="120" height="120">
+                    <span class="d-md-none ms-2 text-dark">LENCERIA</span>
+                    <!-- <small class="d-md-none ms-2 text-center">LENCERIA</small> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
                 <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav me-auto text-light">
+                    <ul class="navbar-nav me-auto text-light letramenu">
                         <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./categoria.html">Categorias</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./sale.html">Sale</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./producto.html">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/categoria.html">Categorias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/sale.html">Sale</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/producto.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
                     </ul>
                     <ul class="navbar-nav flex-row flex-wrap text-dark">
-                        <li class="nav-item dropdown col-4 col-md-auto p-2">
+                        <li class="nav-item dropdown col-4 col-lg-auto p-2">
                             <i class="nav-link dropdown-toggle bi bi-person" id="navbarDropdown" role="button" data-bs-toggle="dropdown"></i>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="">Crear Cuenta</a></li>
                                 <li><a class="dropdown-item" href="">Iniciar Sesión</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item col-4 col-md-auto p-2">
+                        <li class="nav-item dropdown col-4 col-lg-auto p-2">
                             <i class="nav-link dropdown-toggle bi bi-search" id="navbarDropdown" role="button" data-bs-toggle="dropdown"></i>
                             <ul class="dropdown-menu">
                                 <li>
@@ -51,7 +52,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item col-4 col-md-auto p-2">
+                        <li class="nav-item dropdown col-4 col-lg-auto p-2">
                             <i class="nav-link dropdown-toggle bi bi-cart3" id="navbarDropdown" role="button" data-bs-toggle="dropdown"></i>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="">Ver Carrito</a></li>   
@@ -64,41 +65,68 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Contacto</h1>
-            <img src="" alt=""><h4>xx-xxxx-xxxx</h4>
-            <img src="" alt=""><h4>Dirección</h4>
-            <img src="" alt=""><h4>xxxxx@xxxx.com</h4>
-            <img src="../assets/img/face.png" alt="" width="30" height="30"><h4>Facebook</h4>
-        </section>
-        <section>
-            <p>Nombre: <input type="text" name="nombre" ></p>
-            <p>Mail: <input type="email" name="email"></p>
-            <p>Telefono: <input type="tel" name="telefono"></p>
-            <p>Mensaje<textarea name="comentario" rows="5" cols="50">Escribe aquí tu comentario: </textarea></p>
-        </section>
+        <section class="get-in-touch">
+            <h1 class="title">COMENTARIO</h1>
+            <form class="contact-form row">
+               <div class="form-field col-lg-6">
+                  <input id="name" class="input-text js-input" type="text" required>
+                  <label class="label" for="name">Nombre</label>
+               </div>
+               <div class="form-field col-lg-6 ">
+                <input id="apellido" class="input-text js-input" type="text" required>
+                <label class="label" for="apellido">Apellido</label>
+             </div>
+               <div class="form-field col-lg-6 ">
+                  <input id="email" class="input-text js-input" type="email" required>
+                  <label class="label" for="email">E-mail</label>
+               </div>
+                <div class="form-field col-lg-6 ">
+                  <input id="phone" class="input-text js-input" type="text" required>
+                  <label class="label" for="phone">Telefono</label>
+               </div>
+               <div class="form-field col-lg-12">
+                  <input id="message" class="input-text js-input" type="text" required>
+                  <label class="label" for="message">Mensaje</label>
+               </div>
+               <div class="form-field col-lg-12">
+                  <input class="submit-btn" type="submit" value="Enviar">
+               </div>
+            </form>
+         </section>
     </main>
-    <footer class="container">
-        <section class="row">
-            <article class="col-5">
+    <footer class="container p-5">
+        <div class="row">
+            <article class="col-md-5 col-sm-12">
                 <h5>Nosotros</h5>
                 <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni dolorum ipsam obcaecati repudiandae minima consectetur vero, ullam eveniet reiciendis. Tenetur earum, facere possimus fugit laboriosam animi mollitia maiores corrupti blanditiis.</p>
             </article>
-            <div class="col">
-                <h5>Seguinos</h5>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-twitter"></i>
-                <i class="bi bi-instagram"></i>                    
+            <div class="col-md-7 col-sm-12">
+                <div class="row">
+                    <div class="col-4">
+                        <h5>Seguinos</h5>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-instagram"></i>  
+                    </div>   
+                    <div class="col-4">
+                        <h5>Formas de Pago</h5>
+                        <div class="row">
+                            <i class="col-2 bi bi-credit-card"></i>  
+                            <h6 class="col-10">¡Paga en linea!</h6>    
+                        </div>          
+                    </div>
+                    <div class="col-4">
+                        <h5>Formas de Entrega</h5>
+                        <div class="row">
+                            <i class="col-2 bi bi-truck"></i>  
+                            <h6 class="col-10">¡Envio Gratis!</h6> 
+                            <h6 class="col-12">¡Entrega en 48hs!</h6>    
+                        </div>   
+                    </div>               
+                </div>
+
             </div>
-            <div class="col">
-                <h5>Formas de Pago</h5>
-                <i class="bi bi-credit-card"></i>                
-            </div>
-            <div class="col">
-                <h5>Formas de Entrega</h5>
-                <i class="bi bi-truck"></i>
-            </div>
-        </section>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
